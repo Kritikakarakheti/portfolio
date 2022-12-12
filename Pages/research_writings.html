@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Writing</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/1c6c06e40c.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; */
+    .my-story-contents {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .story {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .story p {
+        margin: 30px 0;
+        font-size: 41px;
+    }
+
+    .stories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories p {
+        margin: 0 110px 40px 140px;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 37px;
+    }
+
+    .abstract p,
+    h2 {
+        font-size: 32px;
+    }
+
+    .stories h2 {
+        font-size: 27px;
+        margin: 0 0 40px 140px;
+    }
+
+    .stories p::selection {
+        color: #7885E4;
+    }
+
+    .stories1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories1 h2 {
+        font-size: 32px;
+        margin: 0 0 40px 140px;
+    }
+
+    .stories1 p {
+        margin: 0 110px 40px 140px;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 30px;
+        width: 70%;
+    }
+
+    .copyright {
+        background-image: none;
+        background-color: #262c37;
+    }
+
+    .video1 {
+        display: flex;
+        width: 70%;
+        margin: 0 110px 40px 140px;
+    }
+
+    .video1 video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aashaimg {
+        margin: 2px 0 2px 140px;
+        width: 710px;
+    }
+
+    .bullet-point {
+        display: flex;
+    }
+
+    .bullet-point ul {
+        margin: 0 20px 40px 150px;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    @media screen and (max-width: 700px) {
+        .my-story-contents {
+            width: 100%;
+        }
+
+        .story {
+            width: 100%;
+        }
+        
+        .story p {
+            font-size: 29px;
+            line-height: 40px;
+            margin: 20px 10px;
+        }
+
+        .stories {
+            width: 380px;
+        }
+
+        .stories p {
+            margin: 0 10px;
+            line-height: 35px;
+        }
+
+        .stories h2 {
+            margin: 30px 0 30px 10px;
+        }
+
+        .bullet-point ul {
+            margin: 10px 0 10px 30px;
+        }
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 1020px) { 
+        #linkedin {
+            margin: 0 40px;
+        }
+
+        .navigation-bar ul {
+            width: 600px;
+        }
+
+        .story p {
+            margin-right: 130px;
+        }
+    
+        .stories p {
+            margin: 0 40px 40px 25px;
+        } 
+
+        .stories h2 {
+            margin: 0 40px 40px 25px;
+        } 
+
+        .bullet-point ul {
+            margin: 0 40px 40px 50px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="link-nav-div">
+        <!-- hamburger menucss -->
+        <div class="hamburger_menu">
+            <button onclick="showNav()" class="button1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">About Me</a></li>
+                    <li><a href="1Blog.html">Blog</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="../index.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navigation-bar">
+            <a href="https://www.linkedin.com/in/kritika-karakheti-31179a16b/" id="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">About Me</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="../index.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <script src="../javascript/index.js"></script>
+    </div>
+
+    <div class="go-back">
+        <a href="Portfolio.html">Go back</a>
+    </div>
+
+    <div class="my-story-contents">
+        <div class="story">
+            <p>THE ART OF FOOLING OUR <span style="color: #D04C5E;">BRAIN</span></p>
+        </div>
+
+        <div class="stories">
+            <p>We frequently hear, taking a deep breath, attempting to smile
+                more when life gets challenging or speaking to ourselves saying
+                ‘Everything will be OK’ can fix some major mess in our life and
+                can fool our brain into believing that we are happy.
+            </p>
+            <p>So, does that mean,
+                is it possible to physically modify our body in order to affect how
+                we feel or think?</p>
+            <p>Since the body and mind are intertwined, how you breathe with
+                your lungs may impact how you think and how your brain
+                processes stress.</p>
+            <p>Deep breathing enhances your brain&#39;s oxygen intake and
+                activates your parasympathetic nervous system, which helps you
+                feel calmer. By focusing on your breathing, you may calm your
+                mind and feel more at one with your body. This helps you feel
+                grounded.</p>
+
+            <h2>WHY DO WE FEEL MORE <span style="color: #D04C5E;">ALERT DURING</span> THE DAY AND SLEEPIER
+                AT <span style="color: #D04C5E;">NIGHT?</span></h2>
+            <p>Keeping your eyes open is a method to become more alert.
+                Eyes down is a shortcut to reduced alertness and sleepiness.</p>
+            <p>Your brain causes the production of the hormone
+                melatonin, which induces sleep, at night when there is less
+                light.</p>
+            <h2>WHY THE <span style="color: #D04C5E;">HUMAN BRAIN</span> DOES NOT KNOW HOW TO BE
+                <span style="color: #D04C5E;">HAPPY?</span></h2>
+            <p>Because we frequently spend time doing mind wandering.</p>
+            <div class="bullet-point">
+                <ul>
+                    <li>Focused <span style="color: #D04C5E;">mode</span></li>
+                    <dl>
+                        <dd>- Engaged when you&#39;re processing something very
+                            interesting and very meaningful</dd>
+                    </dl>
+                    <li>Default <span style="color: #D04C5E;">mode</span></li>
+                    <dd>- More time we spend in default mode, the greater our risk
+                        of anxiety, depression, attention deficit, and perhaps even
+                        dementia.</dd>
+                </ul>
+            </div>
+            <p>Since our perceptions may be affected by the right stimuli, the
+                brain&#39;s ability to be fooled is a crucial factor in the design. A
+                product may cause problems if its design fools the user&#39;s mind.</p>
+            <p>Optical speed bars are one example of a device that may trick a
+                user&#39;s brain for a helpful and advantageous purpose.
+                As a result, these synaptic connections are lost, which helps
+                explain how depression develops biologically.</p>
+
+
+            <h2>WHAT IS <span style="color: #D04C5E;">DOPAMINE DETOX?</span></h2>
+            <p>Dopamine, a neurotransmitter that aids in regulating the
+                brain&#39;s reward and pleasure regions, is said to have a role in
+                sleep regulation, according to research printed in the
+                journal PLOS Biology.</p>
+            <p>The pineal gland produces dopamine. Through the release
+                of melatonin at night, which controls the body&#39;s metabolic
+                activity while we sleep, this gland controls our internal clock
+                (circadian rhythm).</p>
+            <p>The release of melatonin from the pineal gland and the
+                circadian rhythm are both regulated by a different hormone
+                called norepinephrine. Norepinephrine attaches to its
+                receptors in cell membranes to perform its actions.</p>
+
+            <h2>Norepine<span style="color: #D04C5E;">phrine</span></h2>
+            <p>A hormone that influences mood, energy, and other things. It is
+                a chemical messenger produced by your central nervous
+                system and a stress hormone secreted from your adrenal
+                gland.</p>
+            <p>It controls a variety of physiological processes to maintain the
+                effectiveness of your body and brain.</p>
+
+            <h2>Fool your <span style="color: #D04C5E;">Brain Mechanism</span></h2>
+            <p>Your brain releases neuropeptides when you smile to help you
+                cope with stress. Along with these neurotransmitters, endorphins,
+                serotonin, and dopamine are also involved.</p>
+            <p>Serotonin is an antidepressant, whereas endorphin is a minor pain
+                reliever.</p>
+            <p>As per one study, smiling can even lower our heart rates and speed
+                up our recovery from stress.</p>
+            <p>Even trying to fake a smile and see how far that gets you can be
+                worthwhile. There is some evidence to suggest that faking a smile
+                might still improve your mood and level of happiness.</p>
+            <p>The human animal is programmed to be greedy. We are always
+                tempted to do actions that will provide us with clear, immediate
+                benefits in the short term, but will ultimately lead us in the wrong
+                direction in the long run.</p>
+            <p>On the other side, we have the choice to do and act on those brightly
+                colored things that seem as though they&#39;ll make everything better.
+                The brain prefers to consume than to produce because it
+                immediately releases dopamine.</p>
+            <p>Dopamine works just like our brain does when it evaluates
+                everything in relation to the other possibilities we have on the table
+                rather than objectively.</p>
+
+            <h2>Power of the <span style="color: #D04C5E;">placebo effect</span></h2>
+            <p>A placebo is when you expect wonderful things to happen to
+                you and they occur. It has a positive impact on your body.</p>
+            <p>Nocebo means &quot;I shall damage.&quot; You anticipate something
+                horrible to occur at that time, and it happens.</p>
+            <p>They are both intriguing and challenging to study.</p>
+            <p>It is referred to as the placebo effect if the patient&#39;s condition
+                improves while receiving the placebo treatment. The methods
+
+                used to give the placebo and the patient’s expectations of the
+                therapy both affect how well the placebo works.</p>
+            <p>Although it is possible to heal oneself mentally, the placebo
+                effect is more complex than just happy thinking.</p>
+            <p>If you allow your mind the chance, it may be a potent tool for
+                healing. The so-called placebo effect is the theory that your brain
+                may fool your body into believing a phony therapy is effective.
+                Science has now shown that, under the correct situations, a
+                placebo may be equally as effective as conventional therapies.
+                &quot;The placebo effect involves more than just having faith that a
+                therapy or procedure will be effective. It aims to improve the
+                relationship between the brain and body and how they interact.</p>
+            <p>Even though the exact mechanism of action of placebos is
+                still unclear, it involves a complex neurobiological response
+                that includes everything from an increase in feel-good
+                neurotransmitters like dopamine and endorphins to more
+                activity in specific brain regions related to mood, emotional
+                responses, and self-awareness.</p>
+            <p>The placebo effect allows the brain to communicate with the
+                body about what it requires to feel better.</p>
+        </div>
+    </div>
+    <div class="scroll-back">
+        <button id="back-btn" onclick="backtotop()"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <script>
+        function backtotop() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <hr>
+    <div class="copyright">
+        <p>By <span style="font-size: 20px; color: #7EA5F4;">Kritika Karakheti</span></span> || <i
+                class="fa-regular fa-copyright"></i>
+            2022 All rights reserved.</p>
+    </div>
+</body>
+
+</html>

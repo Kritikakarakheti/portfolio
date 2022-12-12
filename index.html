@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/1c6c06e40c.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        #hideMeAfter5Seconds {
+            animation: hideAnimation 0s ease-in 3.1s;
+            background-color: white;
+            animation-fill-mode: forwards;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #hideMeAfter5Seconds img {
+            animation: image 3.1s 1 linear;
+        }
+
+        @keyframes image {
+            from {
+                opacity: 0.1;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes hideAnimation {
+            to {
+                visibility: hidden;
+                width: 0;
+                height: 0;
+            }
+        }
+
+        .namaste {
+            position: absolute;
+            top: 630px;
+            animation: namaste 3.1s 1 linear;
+            animation-timing-function: ease-in-out;
+            letter-spacing: 8px;
+            font-weight: bold;
+            color: #D04C5E;
+        }
+
+        @keyframes namaste {
+            from {
+                opacity: 0.1;
+                font-size: 1px;
+            }
+
+            to {
+                opacity: 1;
+                font-size: 32px;
+
+            }
+        }
+
+        @font-face {
+            font-family: "ZaiItalicHandCalligraphy-ALRX2";
+            src: url("ZaiItalicHandCalligraphy-ALRX2.ttf") format("truetype");
+        }
+
+        .banner {
+            width: 100%;
+            height: 710px;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 100%;
+            height: 710px;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        #slideImg {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation-name: zoom;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 710px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            position: absolute;
+        }
+
+        #links1 {
+            display: none;
+        }
+
+        .wrapper-about {
+            width: 70%;
+            margin: 40px auto;
+            font-family: 'Alegreya';
+        }
+
+        .wrapper-about h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #24282d;
+            font-weight: normal;
+            color: #D04C5E;
+        }
+
+        .about-me-content {
+            text-align: justify;
+            font-size: 21px;
+            margin-top: 40px;
+            font-size: 22px;
+            color: #658584;
+        }
+
+        .about-me-content a {
+            color: #D04C5E;
+        }
+
+        .line {
+            width: 40%;
+            height: 3px;
+            background-color: black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+
+        .hr1 {
+            height: 3px;
+            background-color: #D04C5E;
+        }
+
+        .wrapper-contact {
+            width: 70%;
+            margin: 10px auto;
+            color: #658584;
+        }
+
+        .wrapper-contact h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #24282d;
+            font-weight: normal;
+            color: #D04C5E;
+        }
+
+        .line {
+            width: 40%;
+            height: 3px;
+            background-color: black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+
+        .form-validation {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form {
+            margin: 70px auto 20px auto;
+            width: 74%;
+        }
+
+        .form p {
+            font-size: 22px;
+        }
+
+        .form input {
+            width: 780px;
+            height: 55px;
+            margin: 20px auto;
+            font-size: 20px;
+            padding-left: 7px;
+            background-color: #f1f2f3;
+            border: 0;
+        }
+
+        .form textarea {
+            width: 780px;
+            height: 200px;
+            background-color: #f1f2f3;
+            border: 0;
+            padding: 10px;
+            font-size: 21px;
+            resize: none;
+        }
+
+        .submit-button {
+            display: flex;
+        }
+
+        .submit-button button {
+            width: 180px;
+            height: 65px;
+            font-size: 28px;
+            background-color: #D04C5E;
+            border: 0;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .submit-button button:hover {
+            transition: 0.8s ease;
+            background-color: #658584;
+        }
+
+        .work {
+            width: 74%;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin-left: 140px;
+            font-size: 21px;
+            color: #658584;
+            line-height: 32px;
+        }
+
+        .work1 {
+            color: #D04C5E;
+            font-size: 21px;
+            margin-left: 140px;
+        }
+
+        .email-1 {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        .email-2 {
+            margin: 10px auto 0 130px;
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .email-icon {
+            color: #D04C5E;
+            font-size: 32px;
+        }
+
+        .arrow-down a {
+            color: white;
+            font-size: 42px;
+            display: inline-block;
+            position: relative;
+            left: 385px;
+            animation: hover 1s infinite linear;
+        }
+
+        @keyframes hover {
+            from {
+                bottom: 0px;
+            }
+
+            to {
+                bottom: 8px;
+            }
+        }
+
+        #image-load {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .image {
+            width: 340px;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-image: url(images/gif.gif);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes test {
+            from {
+                opacity: 0.1;
+
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .namaste {
+            font-family: ZaiItalicHandCalligraphy-ALRX2;
+        }
+
+        @font-face {
+            font-family: "ZaiItalicHandCalligraphy-ALRX2";
+            src: url("ZaiItalicHandCalligraphy-ALRX2.ttf") format("truetype");
+        }
+
+        @keyframes namaste {
+            from {
+                opacity: 0.1;
+                font-size: 1px;
+            }
+
+            to {
+                opacity: 1;
+                font-size: 52px;
+
+            }
+        }
+
+
+        @font-face {
+            font-family: 'Alegreya';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/alegreya/v29/4UaHrEBBsBhlBjvfkSLk96fp56N1.woff2) format('woff2');
+        }
+
+        @media screen and (max-width: 700px) {
+            #links {
+                display: none;
+            }
+
+            .banner {
+                height: 920px;
+            }
+
+            #slideImg {
+                width: 1200px;
+                background-size: 59%;
+            }
+
+            .slider {
+                height: 920px;
+            }
+
+            .overlay {
+                height: 920px;
+            }
+
+            .introduction-section {
+                z-index: 1000;
+            }
+
+            .navigation-bar {
+                display: none;
+            }
+
+            #links1,
+            .hamburger_menu {
+                display: block;
+            }
+
+            .menu ul {
+                padding: 12px;
+                list-style-type: none;
+            }
+
+            .menu li {
+                padding: 10px;
+            }
+
+            .menu a {
+                color: #B0C7DF;
+                font-size: 17px;
+            }
+
+
+            /* main responsiveness starts from here */
+
+            .texts {
+                width: 340px;
+            }
+
+            .texts h1 {
+                font-size: 35px;
+            }
+
+            .kritika {
+                font-size: 35px;
+            }
+
+            .animation-texts {
+                overflow: hidden;
+                width: 335px;
+            }
+
+            .animation-texts h3 {
+                width: 340px;
+                font-size: 26px;
+            }
+
+            .animation-texts span {
+                font-size: 30px;
+            }
+
+            .intro h2 {
+                font-size: 20px;
+                width: 340px;
+            }
+
+            #h2 {
+                letter-spacing: 0;
+            }
+
+            .content-and-image {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-div {
+                width: 240px;
+                position: relative;
+                left: 32px;
+                bottom: 20px;
+            }
+
+            .pc {
+                display: none;
+            }
+
+            .mob {
+                display: block;
+            }
+
+            .intro {
+                margin-top: 0;
+            }
+
+            .cv-and-contact {
+                width: 120%;
+                margin-left: -20px;
+            }
+
+            .download-cv a {
+                width: 160px;
+                height: 45px;
+                display: flex;
+                font-size: 17px;
+                justify-content: center;
+                align-items: center;
+                background-color: #D04C5E;
+            }
+
+            .contact-me a {
+                width: 160px;
+                height: 45px;
+            }
+
+            .about-intro {
+                width: 340px;
+
+            }
+
+            .about-me {
+                width: 100%;
+                margin: 20px auto;
+            }
+
+            .pp {
+                text-align: left;
+            }
+
+            .for-pc {
+                display: none;
+            }
+
+            .for-mob {
+                width: 340px;
+                margin: 0 -14px;
+                display: block;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                padding: 20px;
+                text-align: justify;
+                font-size: 19px;
+                line-height: 29px;
+            }
+
+            .arrow-down a {
+                position: relative;
+                left: 175px;
+            }
+
+            /* about me contact content starts from here */
+            .line {
+                width: 100%;
+            }
+
+            .about-me-content {
+                width: 350px;
+                margin: 10px 0 10px -40px;
+                padding: 10px;
+            }
+
+            .work {
+                margin-left: -25px;
+                font-size: 18px;
+                width: 100%;
+            }
+
+            .work1 {
+                margin-left: -25px;
+                display: flex;
+                font-size: 18px;
+            }
+
+            .email-2 {
+                width: 306px;
+                margin-left: -25px;
+            }
+
+            .email-1 p {
+                font-size: 12px;
+            }
+
+            /* form css */
+            .form {
+                margin: 10px 0 20px -25px;
+            }
+
+            .form ::placeholder {
+                font-size: 18px;
+            }
+
+            .form p {
+                font-size: 19px;
+            }
+
+            .form input {
+                width: 325px;
+            }
+
+            .form textarea {
+                width: 325px;
+                height: 300px;
+            }
+
+            .submit-button button {
+                width: 160px;
+                height: 55px;
+            }
+
+            .submit-button:hover {
+                background-color: #B0C7DF;
+                transition: 0.8s ease;
+            }
+
+
+            #hideMeAfter5Seconds {
+                animation: hideAnimation 0s ease-in 3.1s;
+                animation-fill-mode: forwards;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                flex-direction: column;
+            }
+
+            #hideMeAfter5Seconds img {
+                animation: image 3.1s 1 linear;
+                position: fixed;
+                bottom: 140px;
+                top: 0;
+                left: 0;
+            }
+
+            @keyframes image {
+                from {
+                    opacity: 0.1;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes hideAnimation {
+                to {
+                    visibility: hidden;
+                    width: 0;
+                    height: 0;
+                }
+            }
+
+            .namaste {
+                position: absolute;
+                /* bottom: 310px; */
+                animation: namaste 3.1s 1 linear;
+                animation-timing-function: ease-in-out;
+                letter-spacing: 8px;
+                font-weight: bold;
+                color: #D04C5E;
+            }
+
+            @keyframes namaste {
+                from {
+                    opacity: 0.1;
+                    font-size: 1px;
+                }
+
+                to {
+                    opacity: 1;
+                    font-size: 32px;
+
+                }
+            }
+        }
+
+        @media (min-width: 1020px) {
+            .arrow-down {
+                position: relative;
+                bottom: 90px;
+            }
+        }
+
+        @media screen and (min-width: 700px) and (max-width: 1020px) {
+            /* .link-nav-div {
+                background-color: black;
+            } */
+
+            .intro h2 {
+                font-size: 23px;
+            }
+
+            .banner {
+                height: 630px;
+            }
+
+            .slider {
+                height: 630px;
+            }
+
+            .overlay {
+                height: 630px;
+            }
+
+            #linkedin {
+                margin: 0 40px;
+            }
+
+            .navigation-bar ul {
+                width: 600px;
+            }
+
+            .image-div img {
+                height: 490px;
+            }
+
+            .for-pc {
+                display: none;
+            }
+
+            .for-mob {
+                display: block;
+                margin: 0 -14px;
+                padding: 20px;
+                text-align: justify;
+                font-size: 19px;
+                line-height: 31px;
+            }
+
+            .arrow-down {
+                display: flex;
+                position: relative;
+                bottom: 80px;
+            }
+
+            .about-me-content {
+                width: 750px;
+                margin-left: -90px;
+            }
+
+            .section-contact-me {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .work {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .work1 {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .email-2 {
+                width: 80%;
+                margin-left: -15px;
+            }
+
+            .form {
+                margin: 50px 120px 50px 0;
+            }
+
+            .form input {
+                width: 620px;
+            }
+
+            .form textarea {
+                width: 620px;
+                height: 320px;
+            }
+        }
+    </style>
+
+</head>
+
+<body onload="slider()">
+
+    <div class="main-wrapper-div-whole">
+
+        <div id="hideMeAfter5Seconds">
+            <img src="images/test.jpg" alt="">
+            <h1 class="namaste">Namaste</h1>
+        </div>
+
+
+
+        <div class="link-nav-div" id="links1">
+            <div class="hamburger_menu">
+                <button onclick="showNav()" class="button1">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="Pages/Blog.html">Blog</a></li>
+                        <li><a href="Pages/activities.html">Activities</a></li>
+                        <li><a href="Pages/Portfolio.html">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navigation-bar" id="index">
+                <a href="https://www.linkedin.com/in/kritika-karakheti-31179a16b/" id="linkedin" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <ul>
+                    <li><a href="#" style="color: #D04C5E;">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="Pages/Blog.html">Blog</a></li>
+                    <li><a href="Pages/activities.html">Activities</a></li>
+                    <li><a href="Pages/Portfolio.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <script src="javascript/index.js"></script>
+        </div>
+
+
+
+        <div class="banner">
+            <div class="slider">
+                <img src="images/annapurna.jpg" alt="" id="slideImg">
+            </div>
+
+            <div class="overlay">
+
+
+                <div class="link-nav-div" id="links">
+                    <div class="hamburger_menu">
+                        <button onclick="showNav()" class="button1">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="Pages/Blog.html">Blog</a></li>
+                                <li><a href="Pages/activities.html">Activities</a></li>
+                                <li><a href="Pages/Portfolio.html">Portfolio</a></li>
+                                <li><a href="#contact">Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="navigation-bar" id="index">
+                        <a href="https://www.linkedin.com/in/kritika-karakheti-31179a16b/" id="linkedin"
+                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <ul>
+                            <li><a href="#" style="color: #D04C5E;">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="Pages/Blog.html">Blog</a></li>
+                            <li><a href="Pages/activities.html">Activities</a></li>
+                            <li><a href="Pages/Portfolio.html">Portfolio</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                    <script src="javascript/index.js"></script>
+                </div>
+
+
+                <section class="introduction-section">
+
+                    <div class="main-wrapper">
+
+                        <!-- hamburger menucss -->
+
+
+                        <div class="content-and-image">
+                            <div class="text-and-animation">
+                                <div class="texts">
+                                    <h1>Hi, I'm <br>
+                                        <span class="kritika">Kritika Karakheti</span>
+                                    </h1>
+                                </div>
+                                <hr>
+                                <!-- this is animation text -->
+                                <div class="animation-texts">
+                                    <h3 class="types">I'm <span class="auto-type"></span></h3>
+                                    <script>
+                                        var typed = new Typed(".auto-type", {
+                                            strings: [
+                                                "A Content Writer", "A Tech Enthusiast", "A Solver", "A Researcher"
+                                                , "An Innovator", "A Leader"],
+                                            typeSpeed: 70,
+                                            backSpeed: 15,
+                                            loop: true
+                                        })
+                                    </script>
+                                </div>
+                                <div class="intro">
+                                    <h2 id="h2">WELCOME TO MY <span style="color: #D04C5E;">PORTFOLIO</span></h2>
+                                </div>
+                                <br> <br>
+                                <div class="pc">
+                                    <div class="cv-and-contact">
+                                        <div class="download-cv">
+                                            <a href="Pages/resume.html" target="_blank">Web
+                                                CV</a>
+                                        </div>
+
+                                        <div class="contact-me">
+                                            <a href="#contact">Contact Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- this is image -->
+                            <div class="image-div">
+                                <img src="images/KK.jpg" alt="">
+                            </div>
+                            <div class="mob">
+                                <div class="cv-and-contact">
+                                    <div class="download-cv">
+                                        <a href="Pages/resume.html" target="_blank">Web
+                                            CV</a>
+                                    </div>
+
+                                    <div class="contact-me">
+                                        <a href="#contact">Contact Me</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="arrow-down">
+                            <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
+                        </div>
+                    </div>
+            </div>
+                </section>
+        </div>
+
+
+        <!-- About us start from here -->
+        <section class="section-about-us" id="about">
+
+            <div class="wrapper-about">
+                <h1>ABOUT ME</h1>
+                <hr class="line">
+                <div class="about-me-content">
+                    <p>My name is Kritika Karakheti. </p> <br>
+                    <p>I have a strong desire, passion, and zeal for understanding the wonders of the human brain. I’ve
+                        always been fascinated by the interesting connection between the emotions that constantly swirl
+                        about in our heads, behavioral control, various mood swings, and their mechanism. I became
+                        interested
+                        in human psychology which later turned into a strong obsession. I love to discuss psychological
+                        ideas and how they may be applied to explain human behavior. I study and research several parts
+                        of the brain that intrigues me. During one of my studies, I was extremely inspired
+                        and captivated by the concept of the placebo effect, leading me to delve more into it and
+                        produce a
+                        paper. </p>
+                    <br>
+                    <p class="pp">I am more interested in computational neuroscience, molecular biology, cognitive and behavioral
+                        neuroscience, neuroimaging, and neuroplasticity.
+                        If any of these topics are also of interest to you, then I would be more than happy to
+                        <a href="#contact">connect.</a>
+                    </p>
+                    <br>
+
+                    <p>I am also a writer. I often use writing as a tool to vent out my emotions about the incidents
+                        that
+                        play a
+                        certain role in my life. Writing makes me feel more lively. It is a means for me to find comfort
+                        and
+                        articulate
+                        my thoughts about feelings,
+                        nature, and knowledge as well as look back on life experiences. I write both fiction and
+                        non-fiction. </p>
+                    <br>
+
+                    <p>Besides these, I adore going to the library since I enjoy the vibe of me being surrounded by
+                        numerous
+                        books.
+                        I love traveling, hiking, meeting new people, listening to others’ experiences and stories,
+                        and have had a divine interest in music since childhood. I also enjoy the aura of meditation.
+                    </p>
+                    <br>
+                    <p>Being someone who is truly concerned about the importance of mental health, I have also done a
+                        few
+                        projects
+                        regarding it. <a href="Pages/Portfolio.html" target="_blank">Click here</a> to directly join me
+                        in
+                        my Portfolio section to see more. And if
+                        you are also interested in these fields and have any project ideas then get in touch! <a
+                            href="#contact">Let’s connect!</a></p>
+                </div>
+                <br><br>
+                <hr class="hr1">
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <section class="section-contact-me" id="contact">
+
+
+
+            <div class="wrapper-contact">
+                <h1>CONTACT</h1>
+
+                <hr class="line">
+                <p class="work">Are you willing to work together or do you have any queries? <br>
+                    Feel free to reach out. <br>
+                </p>
+                <span class="work1">I'd love to hear from you.</span>
+
+                <div class="email-2">
+                    <div class="email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="email-1">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karakheti.kk@gmail.com"
+                            target="_blank">karakheti.kk@gmail.com</a>
+                        <br>
+                        <p>I mostly prefer email for communication</p>
+                    </div>
+                </div>
+
+                <div class="form-validation">
+                    <form class="form" action="https://formspree.io/f/myyvanrb" method="POST">
+                        <p>Name:</p>
+                        <input type="text" name="fname" id="fname" placeholder="Full Name">
+                        <br> <br>
+
+                        <p>Email:</p>
+                        <input type="text" name="_replyto" id="email" placeholder="example@gmail.com">
+                        <br> <br>
+
+                        <p>Message:</p>
+                        <br>
+                        <textarea name="message" id="message" cols="60" rows="20" placeholder="Your Message"></textarea>
+                        <br>
+                        <br>
+                        <div class="submit-button">
+                            <button class="button" value="Send" style="cursor: pointer;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+        <div class="scroll-back">
+            <button id="back-btn" onclick="backtotop()"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        <script>
+            function backtotop() {
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- section of copyright -->
+        <div class="copyright">
+            <p>By <span>Kritika Karakheti</span></span> || <i class="fa-regular fa-copyright"></i> 2022 All rights
+                reserved.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "images/annapurna.jpg",
+            "images/166199.jpeg",
+            "images/166027.jpeg",
+            "images/annapurna1.jpeg",
+            "images/namaste.jpeg",
+            "images/5923086.jpeg",
+            "images/166040.jpeg"
+        );
+
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+    </script>
+</body>
+
+</html>

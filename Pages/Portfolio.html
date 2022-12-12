@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../Reponsive/portfolio_responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="https://kit.fontawesome.com/1c6c06e40c.js" crossorigin="anonymous"></script>
+    <script src="../javascript/preload.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<style>
+    .main-portfolio-content {
+        width: 93%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .portfolio-texts {
+        padding: 10px 20px;
+    }
+
+    .portfolio-texts p {
+        margin: 20px 150px 0 150px;
+        font-size: 32px;
+        position: relative;
+        animation-name: transition;
+        animation-timing-function: 2ms;
+        animation-duration: 2.4s;
+        transition: left 2s;
+    }
+
+    @keyframes transition {
+        from {
+            left: -800px;
+        }
+
+        to {
+            left: 0px;
+        }
+    }
+
+    .link-nav-div {
+        background-image: url(../images/bgimg1.jpg);
+    }
+
+    .button-div {
+        padding: 15px 0 25px 0;
+    }
+
+    .aasha {
+        padding: 25px 10px;
+        letter-spacing: 1px;
+        font-size: 29px;
+    }
+
+    .aasha2 {
+        padding: 25px 10px;
+        margin: -25px 0 20px 0;
+    }
+
+    .aashaimg {
+        padding: 2px 0 30px 0;
+    }
+
+    .video {
+        display: flex;
+        width: 70%;
+        box-shadow: #21309C 0px 0px 0px 3px;
+        padding: 10px 20px;
+    }
+
+    .video video {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .portfolio-texts1 {
+        display: flex;
+        width: 65%;
+        text-align: justify;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin: 30px 0;
+        padding: 20px;
+        line-height: 27px;
+        font-size: 20px;
+        color: black;
+    }
+
+
+    #section3 img {
+        width: 900px;
+    }
+
+    #section4 img {
+        width: 800px;
+    }
+
+    #section6 img {
+        width: 600px;
+    }
+
+
+    .imagesss {
+        display: flex;
+        justify-content: space-around;
+        width: 55%;
+    }
+
+    #img1 {
+        width: 450px;
+        height: 400px;
+    }
+
+    #img2 {
+        width: 450px;
+        height: 650px;
+    }
+
+    #img4 {
+        height: 480px;
+        width: auto;
+    }
+
+    .nextimg {
+        display: flex;
+        justify-content: space-around;
+        width: 69%;
+    }
+
+    .a {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+        background-color: #262c37;
+        letter-spacing: 2px;
+        font-size: 18px;
+        transition: 0.5s;
+        padding: 20px 40px;
+        border: 1px solid #2894ff;
+        text-decoration: none;
+    }
+
+    .a:hover {
+        color: #2894ff;
+    }
+
+    .a span {
+        display: block;
+        position: absolute;
+        background-color: #2894ff;
+    }
+
+    /*  */
+    .a span:nth-child(1) {
+        left: 0;
+        bottom: 0;
+        width: 1px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+
+    .a:hover span:nth-child(1) {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+
+
+
+    /*  */
+    .a span:nth-child(2) {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+
+    .a:hover span:nth-child(2) {
+        transform: scaleY(1);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+
+    /*  */
+
+    .a span:nth-child(3) {
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+
+    .a:hover span:nth-child(3) {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+
+
+    /*  */
+
+    .a span:nth-child(4) {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+        transition-delay: 0.5s;
+    }
+
+    .a:hover span:nth-child(4) {
+        transform: scaleY(1);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+
+    .title-lists {
+        width: 890px;
+        margin: 12px 12px 12px 170px;
+        font-size: 20px;
+        line-height: 46px;
+    }
+
+    .title-lists a:hover {
+        color: #D04C5E;
+        transition: 0.6s ease;
+    }
+
+    .title-lists a {
+        color: black;
+        /* color: #B0C7DF; */
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright {
+        background-color: #262c37;
+        background-image: none;
+    }
+
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide p {
+        font-size: 32px;
+        font-weight: 900;
+        color: #21309C;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swipermin {
+        width: 100%;
+        height: 620px;
+        margin: 0 auto;
+    }
+
+    .swiper-slide p {
+        font-size: 22px;
+    }
+
+    #slide2 {
+        height: 400px;
+    }
+
+    #slide3 {
+        width: 680px;
+    }
+
+    #slide4 {
+        width: 430px;
+    }
+
+    #slide5 {
+        width: 220px;
+    }
+
+    #slide6 {
+        height: 400px;
+    }
+
+    #slide7 {
+        width: 400px;
+    }
+
+    #slide9 {
+        height: 300px;
+    }
+
+    #slide11 {
+        height: 400px;
+    }
+
+    .swiper-pagination span {
+        width: 15px;
+        height: 15px;
+    }
+
+    @media screen and (max-width: 700px) {
+        .hamburger_menu {
+            display: block;
+        }
+
+        .navigation-bar {
+            display: none;
+        }
+
+        .portfolio-texts {
+            margin: 0;
+        }
+
+        .portfolio-texts p {
+            margin: 24px 0 17px 0;
+        }
+
+        .title-lists {
+            width: 340px;
+            margin: 0 20px;
+            font-size: 21px;
+            line-height: 40px;
+        }
+
+        .aasha {
+            font-size: 24px;
+        }
+
+        .aashaimg {
+            padding: 0;
+            width: 350px;
+        }
+
+        .video {
+            width: 350px;
+            padding: 0;
+            margin: 25px 0 10px 0;
+        }
+
+        .portfolio-texts1 {
+            padding: 15px;
+            width: 100%;
+        }
+
+        .button-div {
+            width: 340px;
+        }
+
+        .button-div a {
+            width: 340px;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        #section3 img {
+            width: 340px;
+        }
+
+        #section4 img {
+            width: 340px;
+        }
+
+        #slide3 {
+            width: 290px;
+        }
+
+        #section6 img {
+            width: 320px;
+        }
+
+        .imagesss {
+            width: 100%;
+        }
+
+        #img1 {
+            width: 48%;
+            height: 210px;
+        }
+
+        #img2 {
+            width: 48%;
+            height: 290px;
+        }
+
+        #section7 img {
+            width: 340px;
+        }
+
+        .nextimg {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #img4 {
+            width: auto;
+            height: auto;
+        }
+
+        /* swiper */
+        .swipermin {
+            margin-top: -40px;
+            position: relative;
+        }
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 1020px) {
+
+        /* PORTFOLIO PAGE RESPONSIVENESS */
+        .portfolio-texts p {
+            margin: 30px;
+        }
+
+        .title-lists {
+            margin: 0 50px;
+        }
+
+        .video {
+            width: 720px;
+        }
+
+        .portfolio-texts1 {
+            width: 720px;
+        }
+
+        #section3 img {
+            width: 780px;
+        }
+
+        #section4 img {
+            width: 700px;
+        }
+
+        .imagesss {
+            width: 100%;
+        }
+
+        #img1 {
+            width: 370px;
+            /* height: 360px; */
+        }
+
+        #img2 {
+            width: 370px;
+            height: 530px;
+        }
+
+        .nextimg {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .nextimg img {
+            width: 320px;
+            height: 340px;
+        }
+
+        #img4 {
+            width: 320px;
+            height: 340px;
+        }
+
+        /* swiper */
+        .swipermin {
+            margin-top: -110px;
+            position: relative;
+        }
+
+        #slide2 {
+            width: 414px;
+        }
+
+        #slide4 {
+            width: 430px;
+        }
+
+        #slide5 {
+            width: 220px;
+        }
+
+        #slide6 {
+            height: 400px;
+        }
+
+        #slide7 {
+            width: 400px;
+        }
+
+        #slide9 {
+            height: 300px;
+        }
+
+        #slide11 {
+            height: 400px;
+        }
+    }
+
+
+    @media screen and (min-width: 700px) and (max-width: 1020px) {
+        #linkedin {
+            margin: 0 40px;
+        }
+
+        .navigation-bar ul {
+            width: 600px;
+        }
+
+        .title-lists {
+            margin: 0 50px;
+            width: 770px;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="link-nav-div">
+        <!-- hamburger menucss -->
+        <div class="hamburger_menu">
+            <button onclick="showNav()" class="button1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">About Me</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="../index.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navigation-bar">
+            <a href="https://www.linkedin.com/in/kritika-karakheti-31179a16b/" id="linkedin" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">About Me</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Portfolio.html" style="color: #D04C5E;">Portfolio</a></li>
+                <li><a href="../index.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <script src="../javascript/index.js"></script>
+    </div>
+
+    <div class="main-section-portfolio">
+        <div class="portfolio-texts">
+            <p>My <span style="color: #D04C5E;">Portfolio</span></p>
+        </div>
+
+        <!-- <div class="title-lists">
+            <a href="#section1">Project: TEAM AASHA</a> <br>
+            <a href="#section2">AASHA Nepal App</a><br>
+            <a href="#section3">AASHA Nepal website</a><br>
+            <a href="#section4">Mental Health Status of Middle Adolescents (Age 12-19) - Research Report Analysis</a><br>
+            <a href="#section5">Fool Your Brain - Research Paper</a><br>
+            <a href="#section6">Writings to support Fool Your Brain Mechanism</a><br>
+            <a href="#section7">1166 National Helpline for Suicide Prevention”- Led by WHO</a><br>
+            <a href="#section8">Content Writer at Lean Q. Digital</a><br>
+            <a href="#section9">Content Writer at TechPana</a><br>
+            <a href="#section10">HR & Content Writer at Eventor</a><br>
+            <a href="#section11">The Aware Alpha Investor</a><br>
+        </div> <br> -->
+
+
+
+        <!-- Swiper -->
+        <div class="swipermin">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>Project: TEAM AASHA</p>
+                        <br>
+                        <a href="#section1">
+                            <img src="../images/teamaasha.png" alt="" id="slide1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>AASHA Nepal App</p> <br> <a href="#section2">
+                            <img src="../images/AASHA Nepal app picture.png" alt="" id="slide2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>AASHA Nepal website</p> <br><a href="#section3">
+                            <img src="../images/AASHA Nepal Website picture.png" alt="" id="slide3">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Mental Health Status of Middle Adolescents (Age 12-19) <br> - Research Report Analysis</p>
+                        <br> <a href="#section4">
+                            <img src="../images/Mental Health Status of Middle Adolescents Picture.png" alt=""
+                                id="slide4">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Fool Your Brain - Research Paper </p> <br><a href="#section5">
+                            <img src="../images/Fool Your Brain picture 2.jpg" alt="" id="slide5">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Writings to support Fool Your Brain Mechanism</p> <br><a href="#section6">
+                            <img src="../images/Fool Your Brain picture 1.jpg" alt="" id="slide6">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>1166 National Helpline for Suicide Prevention”- Led by WHO</p> <br><a href="#section7">
+                            <img src="../images/1166.png" alt="" id="slide7">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Content Writer at Lean Q. Digital</p> <br><a href="#section8">
+                            <img src="../images/learnQ.png" alt="" id="slide8">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Content Writer at TechPana</p> <br> <a href="#section9">
+                            <img src="../images/techpana.png" alt="" id="slide9">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>HR & Content Writer at Eventor</p> <br> <a href="#section10">
+                            <img src="../images/hr.png" alt="" id="slide10">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>The Aware Alpha Investor</p> <br><a href="#section11">
+                            <img src="../images/aware1.png" alt="" id="slide11">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+        </div>
+
+
+
+
+
+        <hr> <br>
+        <div class="wrapper-contents" id="section1">
+            <div class="main-portfolio-content">
+                <h2 class="aasha">Project: <span style="color: #D04C5E;">TEAM AASHA</span></h2> <br>
+
+                <img src="../images/teamaasha.png" alt="" class="aashaimg">
+
+                <div class="video">
+                    <video src="../images/AASHA Video for Website - Made with Clipchamp.mp4" controls></video>
+                </div>
+                <div class="portfolio-texts1">
+                    <p>Imagine having a terrible day- a feeling of isolation, no motivation to move ahead, loads of
+                        pressure, but also procrastinating things again and again. Nothing comes up to your mind. You
+                        get
+                        the feeling to quit everything. But does that mean everything is over?
+                        For sure not, right? <br><br>
+                        So what keeps you going? <br><br>
+                        <span style="color: #e63b51; font-weight: bold;">HOPE</span> (AASHA in Nepali) <br><br>
+                        The main reason many of us do not buckle under the weight of our circumstances is because of the
+                        hope that is in our hearts.
+                        To have hope is to want an outcome that makes your life better in some way. It not only can help
+                        make a tough present situation
+                        more bearable but also can eventually improve our lives because envisioning a better future
+                        motivates you to take the steps
+                        to make it happen. <br><br>
+                        Whether we think about it or not, hope is a part of everyone’s life. Everyone hopes for
+                        something.
+                        It’s an inherent part of being
+                        a human being while looking on the bright side and seeing challenges as opportunities where we
+                        say
+                        “Hoping for the best” <br><br>
+                        In this recent world where we are seeing more anxiety and depression in children of all ages.
+                        Tons
+                        of questions may arise in our minds. <br><br>
+                        Why are so many Teens depressed? <br><br>
+                        This serious mental health problem affects how a teenager thinks, feels, and behaves, and can
+                        cause
+                        emotional, functional, and physical
+                        problems. <br><br>
+                        Hence, with the intention to motivate people and sprinkle rays of hope in their life by stepping
+                        toward solving problems related to mental
+                        health, I am Kritika Karakheti from team AASHA, Incubate Nepal 2022 cohort. <br><br>
+                        When you experience difficulty, you have a choice. One option is to hide in a dark place away
+                        from
+                        the world, or you can face adversity
+                        head-on, knowing that you are not alone. You have us. You have AASHA.
+                    </p>
+                </div>
+                <div class="button-div">
+                    <a href="portfolio_content.html" class="a" target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        See more about team aasha
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="main-portfolio-content" id="section2">
+                <h2 class="aasha">AASHA <span style="color: #D04C5E;">Nepal App</span></h2> <br>
+                <img src="../images/AASHA Nepal app picture.png" alt="" class="aashaimg">
+
+                <div class="portfolio-texts1">
+                    <p>At Incubate Nepal, an 8-week program with a 3.43% acceptance rate, I along
+                        with the team worked on the mental health initiative project known as Aasha
+                        Nepal under the guidance of our mentor who is a Data Scientist at the U.S
+                        Defense Health Agency. We built this app that acts as a reliable link between
+                        patients and professional therapists. To make sure we are on track, I monitored
+                        the team and assigned tasks.
+                        Our journey begins when we thought of building a database of professionals in
+                        mental health including psychologists and psychiatrists for our project. Later,
+                        Understanding the difficulty in finding professionals of our budget in our locality,
+                        we then added a feature of location tracking. In some adverse situations, motivational
+                        things might be our instant mood maker. Hence, we came up with the idea of other features
+                        like adding up sections for the motivational slider, transformation stories, notepads
+                        for drawing which is part of relaxation, and many more.
+
+                    </p>
+                </div>
+                <div class="button-div">
+                    <a href="https://play.google.com/store/apps/details?id=com.app.aasha" class="a" target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Way towards the AASHA Nepal App
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="main-portfolio-content" id="section3">
+                <h2 class="aasha">AASHA <span style="color: #D04C5E;">Nepal website</span></h2> <br>
+                <img src="../images/AASHA Nepal Website picture.png" alt="" class="aashaimg">
+
+                <div class="portfolio-texts1">
+                    <p>I along with the team at AASHA also developed a website in an attempt to
+                        make mental health treatment easier and even more accessible to everyone.
+                        In addition to some new features, we integrated several existing
+                        functionality from our app into the website. We are actively working to
+                        update our various sites and database. </p>
+                </div>
+                <div class="button-div">
+                    <a href="https://www.aashanepal.com/" class="a" target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Way towards the AASHA Nepal Website
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="main-portfolio-content" id="section4">
+            <h2 class="aasha">Mental Health Status of Middle Adolescents <span style="color: #D04C5E;">
+                    <br>(Age 12-19) - Research Report Analysis
+                </span></h2> <br>
+            <img src="../images/Mental Health Status of Middle Adolescents Picture.png" alt="" class="aashaimg">
+
+            <div class="portfolio-texts1">
+                <p>As it is reported that almost all mental health issues start from age 14,
+                    I came up with the idea to conduct a survey through Google forms using a
+                    convenience sampling technique that aims to understand the mental health
+                    situation of adolescents and young adults ranging from age 12 to age 22.
+                    <br> <br>
+
+                    Our survey involves around 900+ responses from all over the country covering nearly 43+ districts.
+                    While the survey does not specifically focus on specific stressors and mental issues, we analyzed
+                    the physical care habits, educational mindset, quality of social interaction, use of social media,
+                    and social stigma and their roles as stressors. Then, we prepared our research report based on that.
+                </p>
+            </div>
+            <div class="button-div">
+                <a href="research_report.html" class="a" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Click to get access to Research Report
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="main-portfolio-content" id="section5">
+            <h2 class="aasha">Fool Your Brain <span style="color: #D04C5E;">- Research Paper
+                </span></h2> <br>
+
+            <div class="imagesss">
+                <img src="../images/Fool Your Brain picture 2.jpg" alt="" class="aashaimg" id="img2">
+            </div>
+            <div class="portfolio-texts1">
+                <p>After a year of research and in-depth conversations with 20 individuals who had dealt with mental
+                    health issues,
+                    I was motivated by the idea of placebo effects to write a research paper on the topic of
+                    "Fool Your Brain." It claims that we have the ability to trick or fool our brains in order to
+                    control
+                    our thoughts, behaviors, and brain activity.
+                </p>
+            </div>
+            <div class="button-div">
+                <a href="fool_your_brain.html" class="a" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Click to get access to my Research Paper
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="main-portfolio-content" id="section6">
+            <h2 class="aasha">Writings to support <span style="color: #D04C5E;">Fool Your Brain Mechanism</span>
+            </h2> <br>
+            <img src="../images/Fool Your Brain picture 1.jpg" alt="" class="aashaimg">
+
+            <div class="button-div">
+                <a href="research_writings.html" class="a" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Click to see more
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="main-portfolio-content" id="section7">
+            <h2 class="aasha">1166 National Helpline for <span style="color: #D04C5E;">Suicide Prevention”- Led by
+                    WHO</span>
+            </h2> <br>
+            <img src="../images/1166.png" alt="" class="aashaimg">
+
+            <div class="portfolio-texts1">
+                <p>I was the research associate for the 1166 National Helpline for Suicide Prevention project.
+                    I also created a report on "App Resource Demand" for making the product more user-friendly
+                    and successful based on the discussion I did with 20 patients by getting their consent
+                    and Mental Hospital approval. <br> <br>
+                    It is a national-level project conducted by WHO where people with suicidal thoughts
+                    or emotional distress are encouraged to call 1166 (toll-free) and get 24-hour service.
+                    <br> <br>
+                    This all started when we got the project regarding suicide prevention. The idea was initiated when
+                    they thought of modifying the system of helpline services related to the prevention of mental health
+                    problems and suicidal tendencies. Initially, the helpline service was running only through the
+                    helpline
+                    number directly linked to the counselor’s phone. While going through this way, several complications
+                    came up the way and it didn’t
+                    seem productive at all. Our team then thought of utterly switching it from this way to the path
+                    of digitalization.
+                </p>
+            </div>
+            <div class="button-div">
+                <a href="#" class="a" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    1166 National Helpline for Suicide Prevention App (Click me)
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="main-portfolio-content" id="section8">
+            <h2 class="aasha">Content Writer at <span style="color: #D04C5E;">Lean Q. Digital</span>
+            </h2> <br>
+            <img src="../images/learnQ.png" alt="" class="aashaimg">
+
+            <div class="portfolio-texts1">
+                <p>I was the sole content creator and writer at Lean Q. Digital. I was responsible
+                    for its entire web content and blog posts. <br> <br>
+                    Lean Q. Digital is on a journey to provide the finest
+                    service experience attainable for small and large businesses
+                    that flourish on digital innovation and development. It is
+                    one of the few consulting and development firms specializing
+                    in the digitization & digitalization of services.
+                    <br><br>
+                    To achieve so, it provides tools and develops a plan tailored to
+                    the client's requirements. It assists clients in saving time,
+                    re-engineering business processes, and expanding their product
+                    and service offerings to business partners and customers via the Internet.
+
+                </p>
+            </div>
+            <div class="button-div">
+                <a href="https://leanq.digital/" class="a" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Click to see contents from LeanQ. Digital
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="main-portfolio-content" id="section9">
+            <h2 class="aasha">Content Writer at <span style="color: #D04C5E;">TechPana</span>
+            </h2> <br>
+            <img src="../images/techpana.png" alt="" class="aashaimg">
+
+            <div class="portfolio-texts1">
+                <p>I was the youngest content writer at TechPana, responsible for the website's daily content
+                    and blog articles. <br><br>
+                    Tech Pana is a leading Nepali Technology news portal and Tech awareness platform founded
+                    by an aspiring group of journalists aiming to strengthen Technology awareness among Nepalis,
+                    primarily through mostly spoken language-Nepali prioritizing not only the young and literate
+                    generation but also the unenlightened, inexperienced, and not-so-literate people to gather
+                    the value and emphasizing all about tech-world information and
+                    its crucial importance, covering a wide range of Tech issues.
+                </p>
+            </div>
+            <div class="button-div">
+                <a href="https://techpana.com/" class="a" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    TechPana Website (Click me)
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="main-portfolio-content" id="section10">
+            <h2 class="aasha">HR & Content <span style="color: #D04C5E;">Writer at Eventor</span>
+            </h2> <br>
+            <img src="../images/hr.png" alt="" class="aashaimg">
+
+            <div class="portfolio-texts1">
+                <p>I assisted my friend in starting this company with the intention
+                    of raising the level of chances for students and opportunity
+                    seekers in their desired fields to realize their full potential.
+                    I worked with this firm as the HR and content writer. <br> <br>
+                    Eventor is a platform for aspiring teenagers seeking better opportunities
+                    that organize competitions, seminars, workshops, and tournaments which
+                    could be extremely helpful for learners.
+                    Eventor aim to develop confidence among students stepping a leap of faith
+                    to overlook the challenges and upgrade in the field of their interest.
+                    The major goal is to benefit the maximum student through the guidance of our event.
+
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="main-portfolio-content" id="section11">
+            <h2 class="aasha">The <span style="color: #D04C5E;">Aware Alpha Investor</span>
+            </h2> <br>
+            <div class="nextimg">
+                <img src="../images/aware1.png" alt="" class="aashaimg">
+                <img src="../images/aware2.png" alt="" id="img4">
+            </div>
+            <div class="portfolio-texts1">
+                <p>I handled the entire project during my internship at
+                    Atharva Initiatives naming Aware Alpha Investor with about
+                    42 participants.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>By <span style="font-size: 20px; color: #7EA5F4;">Kritika Karakheti</span></span> || <i
+                class="fa-regular fa-copyright"></i>
+            2022 All rights reserved.</p>
+    </div>
+    </div>
+
+    <div class="scroll-back">
+        <button id="back-btn" onclick="backtotop()"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+    <script>
+        function backtotop() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

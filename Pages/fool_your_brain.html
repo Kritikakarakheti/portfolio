@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fool your brain</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/1c6c06e40c.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; */
+    .my-story-contents {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .navigation-bar {
+        background-image: url(../images/bgimg1.jpg);
+    }
+
+    .story {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .story p {
+        margin: 30px 0;
+        font-size: 41px;
+    }
+
+    .stories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories p {
+        margin: 0 110px 40px 140px;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .abstract p,
+    h2 {
+        font-size: 32px;
+    }
+
+    .stories h2 {
+        font-size: 32px;
+        margin: 0 0 40px 140px;
+    }
+
+    .abstract {
+        margin: 10px 140px 30px 140px;
+        line-height: 37px;
+    }
+
+    .stories p::selection {
+        color: #7885E4;
+    }
+
+    .stories1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories1 h2 {
+        font-size: 32px;
+        margin: 0 0 40px 140px;
+    }
+
+    .stories1 p {
+        margin: 0 110px 40px 140px;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 30px;
+        width: 70%;
+    }
+
+    .copyright {
+        background-image: none;
+        background-color: #262c37;
+    }
+
+    .video1 {
+        display: flex;
+        width: 70%;
+        margin: 0 110px 40px 140px;
+    }
+
+    .video1 video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aashaimg {
+        margin: 2px 0 2px 140px;
+        width: 710px;
+    }
+
+
+    @media screen and (max-width: 700px) {
+        .story p {
+            margin: 30px 0 30px -60px;
+        }
+
+        .abstract {
+            margin: 10px 10px 30px 20px;
+            line-height: 42px;
+        }
+
+        .stories p {
+            margin: 0 10px 5px 20px;
+            width: 340px;
+        }
+
+        .stories h2 {
+            margin: 10px 10px 30px 20px;
+        }
+
+        .aashaimg {
+            width: 350px;
+            margin: 23px 0 23px 30px;
+        }
+
+        .stories1 h2 {
+            margin: 30px 30px;
+        }
+
+        .stories1 p {
+            margin: 0 0 5px 30px;
+            width: 340px;
+        }
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 1020px) { 
+        #linkedin {
+            margin: 0 40px;
+        }
+
+        .navigation-bar ul {
+            width: 600px;
+        }
+        
+        .story p {
+            margin-right: 470px;
+        }
+
+        .abstract {
+            margin-left: 25px;
+        }
+
+        .stories p {
+            width: 94%;
+            margin-left: 25px;
+        }
+
+        .stories h2 {
+            margin: 0 150px 40px 25px;
+        }
+
+        .aashaimg {
+            margin-left: 20px;
+        }
+
+        .stories1 h2 {
+            margin: 0 150px 40px 25px;
+        }
+
+        .stories1 p {
+            width: 94%;
+            margin-left: 25px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="link-nav-div">
+        <!-- hamburger menucss -->
+        <div class="hamburger_menu">
+            <button onclick="showNav()" class="button1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">About Me</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="../index.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navigation-bar">
+            <a href="https://www.linkedin.com/in/kritika-karakheti-31179a16b/" id="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">About Me</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="../index.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <script src="../javascript/index.js"></script>
+    </div>
+
+    <div class="go-back">
+        <a href="Portfolio.html">Go back</a>
+    </div>
+
+    <div class="my-story-contents">
+        <div class="story">
+            <p>Fool your <span style="color: #D04C5E;">Brain</span></p>
+        </div>
+        <div class="abstract">
+            <p>Kritika <span style="color: #D04C5E;">Karakheti</span></p> <br>
+            <h2>Abs<span style="color: #D04C5E;">tract</span></h2>
+        </div>
+        <div class="stories">
+            <p>The goal of neuroscience has been to comprehend how brain cells generate cognitive abilities.
+                How far has this field of neuroscience come? Thinking about the link between influences and
+                impulses that are stimulated by the brain is based on research into how the brain works. Humans
+                have simple minds. Actually, our brains want to decide rapidly. This is largely motivated by
+                feelings. People frequently use willpower to pick a delayed reward that will be worth more than
+                an immediate benefit that will be worth less. I hypothesized that people&#39;s views of their own
+                willpower predict both their anticipated ability to self-regulate and their actual self-regulation the
+                next day. Decisions are made more quickly using this method than using other brains that wish to
+                think and consider. While there are still many unsolved problems, recent advances in several of
+                scientific fields have made it feasible to link certain brain network features to cognitive
+                capabilities. The findings imply that perceptions about willpower influence whether expectations
+                are met the day before having favorable or negative effects on people&#39;s ability to regulate their
+                behavior. The discoveries show, at least in broad strokes, how cognitive processes might be an
+                emergent characteristic of neurons and their connections.
+            </p>
+            <p>Keywords: <span style="color: #D04C5E;">placebo, optimism, theories about willpower, self-control</span></p>
+            <h2>Intro<span style="color: #D04C5E;">duction</span></h2>
+            <p>The science behind the placebo effect is thoroughly examined in relation to the idea of fooling
+                our brains. Your mind has the ability to transform your circumstances and heal your body. Your
+                personality is built up solely of the ideas, feelings, and decisions that you make, and everything
+                that you do is within your complete control. The idea may seem strange at first since you are
+                building new neural connections in your brain rather than continuing to use the ones you have
+                used your whole life. You must signal new genes in unique ways to produce new outcomes if
+                you wish to recover from something. You are altering your brain and forming new neural
+                pathways that correspond to those precise ideas when you mentally practice and visualize how
+                you want to act, feel, and appear. When you sincerely believe something is conceivable and think
+                about it frequently enough, your brain acts as though it has already happened even though it
+                hasn't.</p>
+            <p>How do we break away from making progress for a little time before reverting to old habits?
+                Why does our brain default to pursuits that provide rapid gratification? Why do people have
+                trouble living in the moment, hold resentments, and concentrate on things that are beyond their
+                control?</p>
+            <p>The most likely cause of the human brain not knowing how to be joyful is how much time we
+                spend wandering. Our risk of developing anxiety, sadness, attention deficiency, and maybe
+                dementia increases the more time we spend in default mode.</p>
+            <p>Treating yourself with your mind is possible. When given the chance, your mind may be a potent
+                healing tool. The so-called placebo effect is the theory that your brain may fool your body into
+                believing a false therapy is effective. The placebo effect involves more than just having faith that
+                therapy or procedure will be effective. It aims to strengthen the link between the brain and body.
+            </p>
+            <p>Being that the body and mind are intimately entwined, it stands to reason that how you breathe
+                with your lungs might have an impact on how you feel mentally and how your brain processes
+                stress.</p>
+            <p>When facing challenging situations in life or when feeling nervous about anything, we are
+                frequently advised to take a deep breath, attempt to smile more, or to stand tall and confident.
+            </p>
+            <p>It is simple to trick our brains if we construct the notion of keeping things straightforward and
+                establishing goals.</p>
+            <h2>Materials & <span style="color: #D04C5E;">Methods</span></h2>
+            <p>This study was carried out in accordance with the legal consent of the mental hospital for the
+                research-based 1166 Suicide Prevention Helpline Mobile Application to be made to serve the
+                community.</p>
+            <h2>Participants and <span style="color: #D04C5E;">Procedure</span></h2>
+            <p>Participants were 20 patients who had gone through mental health-related problems and were
+                then mentally stable. The purpose of choosing the vulnerable participants for the survey was
+                made on the hypothesis that the beliefs about willpower play an important role in having a self-
+                control upon ourselves and hence affect the fooling the brain mechanism. Due to the reason that
+                the participants during their mental health problem comparatively had less willpower than the
+                state where they are mentally stable and recovered, the survey was taken to see the difference of
+                willpower in having a self-control and successfully fooling your brain.
+            </p>
+            <p>Out of 20 participants, 17 of them had tried tricking/ fooling their brain. They were asked if
+                forced smile worked for them during the stressful period in their life. Most of them responded
+                that it works and makes them feel energized. They used to trick themselves that everything will
+                be alright even if it’s not which not only used to make them feel better but also help them engage
+                more in healthy and fulfilling activities, simultaneously leading them not to stop and give up.
+                From the survey I took, the participants who had strong willpower and carried the strong belief
+                in something were found to be positively driven and most successful in fooling their brain.</p>
+            <h2>Res<span style="color: #D04C5E;">ults</span></h2>
+            <p>Based on the survey respondents&#39; responses, the findings were examined. According to the study,
+                the biggest obstacle to change is a person&#39;s lack of willpower, which may be solved by giving
+                them more time to themselves. A clear objective must be created, a strong motive for change
+                must be identified, and conduct toward the goal must be closely watched. To succeed, you must
+                exercise willpower.</p>
+        </div>
+        <img src="../images/survey.png" alt="" class="aashaimg">
+        <img src="../images/power.png" alt="" class="aashaimg">
+        <br> <br>
+        <div class="stories1">
+            <h2>Discu<span style="color: #D04C5E;">ssion</span></h2>
+            <p>Willpower may become stronger with repetition. Nothing is difficult for us if we have the self-
+                control and willpower to do it. If we have a strong enough trust in our beliefs, we can shape our
+                minds in the direction we wish. The idea of tricking your brain was created in this manner. Our
+                bodies, thoughts, happiness, and performance are all things that we can manage.
+            </p>
+            <p>According to one study, smiling can even lower our heart rates and speed up our recovery from
+                stress. Even trying to fake a grin and seeing how it goes can be worthwhile. There is proof that
+                faking a grin can nevertheless improve your mood and level of happiness.</p>
+
+                <h2>Conc<span style="color: #D04C5E;">lusion</span></h2>
+                <p>The findings suggest that the strong beliefs about willpower determine if you have a self-control
+                    over yourself or not. And it is possible to actually fool our brain and navigate it the way we
+                    desire.</p>
+        </div>
+    </div>
+    <div class="scroll-back">
+        <button id="back-btn" onclick="backtotop()"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <script>
+        function backtotop() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <hr>
+    <div class="copyright">
+        <p>By <span style="font-size: 20px; color: #7EA5F4;">Kritika Karakheti</span></span> || <i
+                class="fa-regular fa-copyright"></i>
+            2022 All rights reserved.</p>
+    </div>
+</body>
+
+</html>
