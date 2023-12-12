@@ -46,7 +46,7 @@ export const projectsData = [
       { type: "video", url: "/images/aashawebsite.mp4" },
     ],
 
-    video: "images/aashawebsite.mp4",
+    video: "https://github.com/Kritikakarakheti/portfolio/blob/master/build/images/aashawebsite.mp4?raw=true",
     projectTitle: "AASHA Nepal",
     projectDescription:
       "Incubate Nepal was an 8-week mentored national summer research program, hosted by Harvard and MIT alumni. I was selected for this research project from a competitive pool of 800+ applicants. Under the mentorship of Ojaswi Pandey (an alumnus of Middlebury College and data Scientist), we built AASHA Nepal, a Mental Health Resource Platform that constitutes an app and a website that acts as a reliable link between patients and professional therapists. Understanding the difficulty in finding affordable professionals in the local area, the project expanded to include a location tracking feature, thereby connecting individuals with the right help when they need it the most. Beyond this, AASHA introduced elements like motivational content, transformation stories, and relaxation tools, recognizing the importance of holistic mental well-being. Their focus on adolescents and young adults, as highlighted by their survey spanning 900+ responses from across the country, sheds light on the specific stressors and issues affecting this age group. With the project's determination to bring positive change to people's lives, it promises to be a valuable asset in the realm of mental health in Nepal.",
