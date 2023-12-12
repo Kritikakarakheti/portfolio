@@ -6,17 +6,17 @@ export const videoData = [
   },
   {
     id: 2,
-    video: "/video/teamendtb.mp4",
+    video: "https://github.com/Kritikakarakheti/portfolio/blob/master/build/video/teamendtb.mp4?raw=true",
     videoDesc: "Project END TB Promotional Video",
   },
   {
     id: 3,
-    video: "/video/videopresentation.mp4",
+    video: "https://github.com/Kritikakarakheti/portfolio/blob/master/build/video/videopresentation.mp4?raw=true",
     videoDesc: "Final Project(AASHA NEPAL) Presentation",
   },
   {
     id: 4,
-    video: "/video/aashanepalvideo.mp4",
+    video: "https://github.com/Kritikakarakheti/portfolio/blob/master/build/video/aashanepalvideo.mp4?raw=true",
     videoDesc: "Full-Length Interview Video with TB Specialists",
   },
 ];
