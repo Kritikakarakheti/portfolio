@@ -1,7 +1,7 @@
 export const videoData = [
   {
     id: 1,
-    video: "https://github.com/video/aashanepalvideo.mp4",
+    video: "https://github.com/Kritikakarakheti/portfolio/blob/master/build/video/aashanepalvideo.mp4",
     videoDesc: "Project AASHA NEPAL Promotional Video",
   },
   {
