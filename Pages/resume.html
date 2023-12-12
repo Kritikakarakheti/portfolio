@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+        }
+    
+        @font-face {
+            font-family: 'Alegreya';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/alegreya/v29/4UaHrEBBsBhlBjvfkSLk96fp56N1.woff2) format('woff2');
+        }
+    
+        .main-contents {
+            font-size: 22px;
+        }
+    
+        .main-contents h2 {
+            color: darkblue;
+        }
+    
+        .line {
+            height: 3px;
+            background-color: rgb(41, 16, 61);
+        }
+    
+        .introduction {
+            width: 70%;
+            margin: 10px auto;
+            line-height: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #D04C5E;
+            flex-direction: column;
+        }
+    
+    
+        .introduction p {
+            font-size: 42px;
+        }
+    
+        .introduction a {
+            font-size: 27px;
+        }
+    
+        .academics {
+            width: 66%;
+            margin: 20px auto;
+        }
+    
+        .aasha {
+            line-height: 42px;
+        }
+    
+        .academics-1 {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .p2 p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+        /* leadership */
+        .leadership {
+            width: 66%;
+            margin: 20px auto;
+        }
+    
+        .leadership-1 {
+            text-align: justify;
+            line-height: 32px;
+        }
+    
+        .aasha {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .aasha p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+        /* 1166 national */
+        .national {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .national p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+        .national-1 {
+            text-align: justify;
+            line-height: 32px;
+        }
+    
+    
+    
+        /* mental health */
+        .mental {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .mental p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+        .mental-1 {
+            text-align: justify;
+            line-height: 32px;
+        }
+    
+    
+        /* fool your brain */
+    
+        .brain {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .brain p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+        .brain-1 {
+            text-align: justify;
+            line-height: 32px;
+        }
+    
+    
+    
+        /* WORK EXPERIENCE */
+        .experience {
+            width: 66%;
+            margin: 20px auto;
+            line-height: 32px;
+        }
+    
+        .leanQ {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    
+        .leanQ p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+        .techpana {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    
+        .techpana p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+    
+    
+        /* hr and content write */
+        .hr {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    
+        .hr p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+    
+        /* aware alpha */
+    
+        .aware {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    
+        .aware p {
+            color: #D04C5E;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+    
+        /* OTHER ACTIVITES */
+        .other-activities {
+            width: 66%;
+            margin: 20px auto;
+            line-height: 32px;
+            text-align: justify;
+        }
+    
+        /* skilllls */
+        .skills {
+            width: 66%;
+            margin: 30px auto;
+            line-height: 32px;
+        }
+    
+        .young-leaders {
+            margin-top: 20px;
+        }
+    
+        .content-session {
+            margin-top: 20px;
+        }
+    
+        .global {
+            margin-top: 20px;
+        }
+    
+        .children {
+            margin-top: 20px;
+        }
+    
+        .skills h4 {
+            margin-top: 20px;
+        }
+
+
+        @media screen and (max-width: 700px) {
+
+            .introduction p {
+                text-align: center;
+            }
+
+            .main-contents h2 {
+                font-size: 27px;
+            }
+            /* academics */
+
+            .academics {
+                width: 87%;
+            }
+
+            .academics-1 {
+                font-size: 15px;
+            }
+
+            .p2 p {
+                font-size: 14px;
+            }
+
+
+            /* leadership */
+            .leadership {
+                width: 87%;
+            }
+
+            .leadership-1 {
+                font-size: 15px;
+                line-height: 32px;
+            }
+
+            .aasha {
+                display: block;
+            }
+
+            .aasha h4 {
+                font-size: 15px;
+            }
+
+            .aasha p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+
+            .national {
+                display: block;
+            }
+
+            .national h4 {
+                font-size: 15px;
+            }
+
+            .national p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+            .national-1 {
+                font-size: 15px;
+            }
+
+
+            .mental {
+                display: block;
+            }
+
+            .mental h4 {
+                font-size: 15px;
+            }
+
+            .mental p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+            .mental-1 {
+                font-size: 15px;
+            }
+
+
+            .brain {
+                display: block;
+            }
+
+            .brain h4 {
+                font-size: 15px;
+            }
+
+            .brain p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+            .brain-1 {
+                font-size: 15px;
+            }
+
+
+
+            /* WORK EXPERIENCE */
+            .experience {
+                width: 87%;
+            }
+
+            .leanQ {
+                display: block;
+            }
+
+            .leanQ h4 {
+                font-size: 15px;
+            }
+
+            .leanQ p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+            .leanQ-1 {
+                font-size: 15px;
+            }
+
+
+            .techpana {
+                display: block;
+            }
+
+            .techpana h4 {
+                font-size: 15px;
+            }
+
+            .techpana p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+            .techpana-1 {
+                font-size: 15px;
+            }
+
+
+            .hr {
+                display: block;
+            }
+
+            .hr h4 {
+                font-size: 15px;
+            }
+
+            .hr p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+            .hr-1 {
+                font-size: 15px;
+            }
+
+
+            .aware {
+                display: block;
+            }
+
+            .aware h4 {
+                font-size: 15px;
+                line-height: 26px;
+            }
+
+            .aware p {
+                font-size: 15px;
+                display: flex;
+                line-height: 20px;
+                justify-content: flex-end;
+            }
+
+            .aware-1 {
+                font-size: 15px;
+            }
+
+
+            /* OTHER ACTIVITES */
+            .other-activities {
+                width: 87%;
+            }
+
+            .young-leaders, .content-session, .global, .children {
+                font-size: 15px;
+            }
+
+
+
+            /* skills */
+            .skills {
+                width: 87%;
+            }
+
+            .skills h4 {
+                font-size: 20px;
+            }
+
+            .skills p {
+                font-size: 15px;
+            }
+        }
+
+
+
+        @media screen and (min-width: 700px) and (max-width: 1020px) {
+            .academics, .leadership, .experience, .other-activities,.skills {
+                width: 92%;
+            }
+
+            .aasha, .national, .brain, .mental, .leanQ, .techpana, .hr, .aware {
+                flex-direction: column;
+            }
+
+            .aasha, .national ,.brain, .mental, .leanQ, .techpana, .hr, .aware p {
+                margin-left: auto;
+            }
+
+            .aasha p {
+                margin-left: auto;
+            }
+
+            .national p {
+                margin-left: auto;
+            }
+
+            .brain p {
+                margin-left: auto;
+            }
+
+            .mental p {
+                margin-left: auto;
+            }
+
+            .leanQ p {
+                margin-left: auto;
+            }
+
+            .techpana p {
+                margin-left: auto;
+            }
+            
+            .hr p {
+                margin-left: auto;
+            }
+
+            .aware p {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="wrapper-section">
+
+        <div class="wrapper-div">
+
+            <div class="introduction">
+                <p>KRITIKA KARAKHETI</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karakheti.kk@gmail.com" target="_blank">karakheti.kk@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kritika-karakheti-31179a16b/" target="_blank">LinkedIn</a>
+            </div>
+            <br>
+            <hr class="line">
+
+
+        <div class="main-contents">
+
+            <!-- academics -->
+            <div class="academics">
+                <h2>Academics</h2>
+                <hr class="line">
+                <br>
+                <div class="academics-1">
+                    <div class="p1">
+                        <p>GoldenGate International College, Kathmandu, Nepal </p>
+                        <br>
+                        <p>Gyan Niketan HS School, Kathmandu, Nepal </p>
+                    </div>
+
+                    <div class="p2">
+                        <p>July 2019 - August 2021</p>
+                        <br>
+                        <p>May 2015 - May 2019</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+
+            <!-- leadership -->
+
+
+            <div class="leadership">
+                <h2>Leadership and Service</h2>
+                <hr class="line">
+                <br>
+
+                <div class="aasha">
+                    <h4>AASHA Nepal App and Website –Project Lead</h4>
+                    <p>August 2022 - October 2022</p>
+                </div>
+                <br>
+
+                <div class="leadership-1">
+                    <p>- Worked on the mental health initiative project at Incubate Nepal,
+                        an 8-week program with a 3.43% acceptance rate under the guidance 
+                        and mentorship of MIT and Harvard graduates .</p>
+                    <p>- Built a trustworthy app with standout features that acts as a reliable link
+                        between patients and & professional &nbsp;&nbsp;&nbsp;therapists.</p>
+                    <p>- Developed a website in an attempt to make mental health
+                        treatment easier and even more &nbsp;&nbsp;&nbsp;accessible.</p>
+                </div>
+
+                <br>
+                <!-- 1166 national -->
+
+                <div class="national">
+                    <h4>1166 National Helpline for Suicide Prevention led by WHO <br> – Research Associate</h4>
+                    <p>June 2022 – August 2022</p>
+                </div>
+                <br>
+                <div class="national-1">
+                    <p>- Interacted with over 20+ patients who dealt with mental health issues
+                        but then stable, along with mental health &nbsp;&nbsp;&nbsp;professionals to understand the true need.</p>
+                    <p>- Created a report on "App Resource Demand" for making the product more user-friendly
+                        and successful.</p>
+                    <p>- Encouraged patients in the hospital experiencing
+                        suicidal thoughts or emotional distress to dial
+                        1166 (toll-free) &nbsp;&nbsp;&nbsp;and get 24-hour assistance.</p>
+                </div>
+
+
+                <!-- mental health -->
+                <br>
+
+                <div class="mental">
+                    <h4>Mental Health Status of Middle Adolescents <br> Research Report Analysis</h4>
+                    <p>August 2022 – October 2022</p>
+                </div>
+                <br>
+
+                <div class="mental-1">
+                    <p>- Evaluated the mental health situation of adolescents and young adults ranging from age 12-22.
+                    </p>
+                    <p>- Surveyed 900+ people from all over the country covering 43+ districts through Google forms
+                        using a &nbsp;&nbsp;&nbsp;convenience sampling technique. </p>
+                    <p>- Analyzed the usage of social media, social stigma, quality of social interaction, educational
+                        mindset, and &nbsp;&nbsp;&nbsp;physical care practices and their roles as stressors in mental health.</p>
+                    <p>- Prepared a research report based on that.</p>
+                </div>
+
+                <br>
+
+                <!-- fool your brain -->
+                <div class="brain">
+                    <h4>Fool Your Brain Research Paper</h4>
+                    <p>October 2021 – September 2022</p>
+                </div>
+                <br>
+                <div class="brain-1">
+                    <p>- Wrote a research paper after 1 year of research and in-depth conversations with 20+ patients
+                        who had dealt &nbsp;&nbsp;&nbsp;with mental health issues.</p>
+                </div>
+            </div>
+
+
+            <!-- work experience -->
+            <br>
+            <div class="experience">
+                <h2>Work Experience</h2>
+                <hr class="line">
+                <!-- leanQ -->
+                <div class="leanQ">
+                    <h4>Content Writer at Lean Q. Digital</h4>
+                    <p>February 2022 – September 2022</p>
+                </div>
+
+                <div class="leanQ-1">
+                    <p>- Became sole content creator and writer and took
+                        responsibility for its web content and blog posts. </p>
+                </div>
+
+
+                <!-- techpana -->
+
+                <div class="techpana">
+                    <h4>Content Writer at TechPana</h4>
+                    <p>October 2021 – January 2022 </p>
+                </div>
+
+                <div class="techpana-1">
+                    <p>- Took responsibility for the website’s
+                        daily content and blog articles.</p>
+                </div>
+
+
+                <!-- hr and content writer -->
+                <div class="hr">
+                    <h4>HR and Content Writer at Eventor </h4>
+                    <p>December 2021 – March 2022</p>
+                </div>
+
+                <div class="hr-1">
+                    <p>- Assisted in initiating a company with the intention of raising the
+                        level of chances for students and opportunity &nbsp;&nbsp;&nbsp;seekers in their desired fields.</p>
+                </div>
+
+
+
+                <!-- aware alpha -->
+
+                <div class="aware">
+                    <h4>The Aware Alpha Investor 2.0 – Coordinator and Manager</h4>
+                    <p>June 2021 – August 2021</p>
+                </div>
+
+                <div class="aware-1">
+                    <p>- Handled the entire project during my internship at Atharva
+                        Initiatives with about 42 participants.</p>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- OTHER ACTIVITIES -->
+
+            <div class="other-activities">
+                <h2>OTHER ACTIVITIES</h2>
+                <hr class="line">
+                <!-- young leaders -->
+                <div class="young-leaders">
+                    <h4>Young Leaders Fellowship Program 2022</h4>
+                    <p>- Selected as a finalist in the The Young Leaders Fellowship Program , a leadership opportunity
+                        with a very low &nbsp;&nbsp;&nbsp;acceptance rate for those who looking to address community issues in the areas of &nbsp;&nbsp;&nbsp;education,
+                        health, and &nbsp;&nbsp;&nbsp;economic stability.
+                    </p>
+                    <p>
+                        - Initiated project with a set of survey questions on a community level to understand the basic
+                        scenario of &nbsp;&nbsp;&nbsp;mental health.
+                    </p>
+                </div>
+
+
+                <!-- content writing session -->
+                <div class="content-session">
+                    <h4>Content Writing Session</h4>
+                    <p>- Lead a session on content creation, made a presentation,
+                        and shared ideas and perspectives in front of a &nbsp;&nbsp;&nbsp;sizable audience.
+                    </p>
+                </div>
+
+
+                <!-- global landscape -->
+                <div class="global">
+                    <h4>Global Landscapes Forum (GLF) Climate </h4>
+                    <p>- Volunteered as a rapporteur for the Global Landscapes Forum (GLF) Climate 2022 Hybrid Conference:
+                        &nbsp;&nbsp;&nbsp;Frontiers of Change while assisting in two sessions: Unlocking solutions to financeecosystem
+                        restoration
+                        and &nbsp;&nbsp;&nbsp;Early Warning-
+                        Early Action Systems for transboundary threats.
+                    </p>
+                    <p>- Created a report outlining all the pertinent details of the event.
+                    </p>
+                </div>
+
+
+                <!-- national chindren theatre -->
+
+                <div class="children">
+                    <h4>National Children’s Theatre Festival</h4>
+                    <p>- Chosen to appear in the 3rd National Children’s Theatre Festival and conveyed
+                        the significance
+                        of gender &nbsp;&nbsp;&nbsp;equality and the value of women in society through our act.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="skills">
+                <h2>Skills</h2>
+                <hr class="line">
+
+                <h4>Languages</h4>
+                <p>Nepali (Proficient); English (Proficient); Hindi (Proficient) 
+                </p>
+
+
+                <h4>Hard Skills</h4>
+                <p>- Typing (Proficient); Python (Intermediate); Word and PowerPoint (Proficient); Excel (Intermediate): 
+                    Adobe &nbsp;&nbsp;&nbsp;Photoshop (Intermediate)
+                </p>    
+
+                <h4>Soft Skills</h4>
+                <p>- Leadership and Communication; Coordination; Flexibility and Adaptability;
+                     Cheerfulness and Extrovert &nbsp;&nbsp;&nbsp;nature
+                </p>  
+
+            </div>
+
+        </div>
+    </div>
+
+    </section>
+
+</body>
+
+</html>
