@@ -1,0 +1,98 @@
+import React, { useState } from "react";
+
+const BlogSlider = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handlePaginationClick = (index) => {
+    setActiveSlide(index);
+  };
+  //
+
+  const cardData = [
+    {
+      image:
+        "https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp",
+      title: "Lorem Ipsum Dolor 1",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    },
+    {
+      image: "https://i.ytimg.com/vi/2OqWK9627sM/maxresdefault.jpg",
+      title: "Lorem Ipsum Dolor 2",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    },
+    {
+      image:
+        "https://miro.medium.com/v2/resize:fit:1400/0*j8gH1ZnE-VKrhVMl.png",
+      title: "Lorem Ipsum Dolor 3",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    },
+    {
+      image:
+        "https://miro.medium.com/v2/resize:fit:1400/0*j8gH1ZnE-VKrhVMl.png",
+      title: "Lorem Ipsum Dolor 3",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    },
+    {
+      image:
+        "https://miro.medium.com/v2/resize:fit:1400/0*j8gH1ZnE-VKrhVMl.png",
+      title: "Lorem Ipsum Dolor 3",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    },
+    {
+      image:
+        "https://miro.medium.com/v2/resize:fit:1400/0*j8gH1ZnE-VKrhVMl.png",
+      title: "Lorem Ipsum Dolor 3",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    },
+  ];
+
+  return (
+    <div className="flex border bg-[#282b30] text-white shadow-lg rounded-lg p-6 relative w-[70%] mx-auto blog-slider">
+      <div className="swiper-wrapper blog-slider__wrp">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className={`swiper-slide blog-slider__item ${
+              activeSlide === index ? "block" : "hidden"
+            } transition-opacity duration-300 ease-in-out flex items-center`}
+          >
+            <div className="w-80 h-80 relative right-14 blog-slider__img flex-shrink-0 shadow-md rounded-lg overflow-hidden">
+              <img
+                src={card.image}
+                alt={card.title}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="blog-slider__content ml-6 space-y-4">
+              {/* <span className="blog-slider__code ">26 December 2019</span> */}
+              <div className="text-2xl font-semibold">{card.title}</div>
+              <div className="">{card.text}</div>
+              <div>
+                <a
+                  href="www.w.com"
+                  target="_blank"
+                  className="blog-slider__button text-white mt-4 pt-2 pb-2 pl-4 pr-4 bg-primaryRed rounded-xl inline-block"
+                >
+                  VIEW PROJECTS
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center justify-center flex-col">
+        {cardData.map((_, index) => (
+          <div
+            key={index}
+            className={`pagination-dot ${
+              activeSlide === index ? "bg-primaryRed h-[2rem]" : "bg-gray-300"
+            } w-3 h-3 rounded-full m-1 cursor-pointer`}
+            onClick={() => handlePaginationClick(index)}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default BlogSlider;
